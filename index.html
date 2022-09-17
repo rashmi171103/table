@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "topic">
+    <h1>Calculating sum of each row and column</h1>
+    </div>
+    <div class="main">
+        <table class = "tb1-content">
+            <thead>
+            <tr>
+                <th class="heading">Row&Column</th>
+                <th class="heading">Column 1</th>
+                <th class="heading">Column 2</th>
+                <th class="heading">Column 3</th> 
+                <th id = "sum">Sum of Row</th>
+            </tr> 
+        </thead>
+
+
+            <tr class="odd"> 
+                <td class ="RowHeading">Row 1</td> 
+
+                <td><input type="text" id="col0"/></td> 
+                <td><input type="text" id="col1"/></td> 
+                <td><input type="text" id="col2"/></td> 
+                <td><input type="text" id="rowsum1" readonly/></td> 
+            </tr>  
+            <tr class="even"> 
+                <td class ="RowHeading">Row 2</td> 
+
+                <td><input type="text" id="col3"/></td> 
+                <td><input type="text" id="col4"/></td> 
+                <td><input type="text" id="col5"/></td> 
+                <td><input type="text" id="rowsum2" readonly/></td> 
+            </tr>  
+            <tr class="odd"> 
+                <td class ="RowHeading">Row 3</td> 
+            
+                <td><input type="text"  id="col6"/></td> 
+                <td><input type="text" id="col7"/></td> 
+                <td><input type="text" id="col8"/></td> 
+                <td><input type="text" id="rowsum3"readonly/></td> 
+                
+            </tr>  
+            <tr class="even"> 
+                <th class="sumofcol">Sum of Columns</th> 
+
+                <td><input type="text" id="colsum1" readonly /></td> 
+                <td><input type="text" id="colsum2" readonly/></td> 
+                <td><input type="text" id="colsum3" readonly/></td> 
+
+                <!-- add and delete buttons -->
+                <td>
+                    <div id = "btns">
+                        <input type="button" class="btn" value="Add" onclick="add()" /> 
+                        <input type="button" value="Delete" class="btn" onclick="remove()"/>
+                    </div>
+                </td>
+            </tr>  
+            </table> 
+
+   <script src="script.js"></script>
+</body>
+</html>
